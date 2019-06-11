@@ -1,0 +1,14 @@
+#!/usr/bin/bash
+
+echo "gcc -std=c99 -g3 -pedantic -Wall -O2 keygen.c -o keygen"
+gcc -std=c99 -g3 -pedantic -Wall -O2 keygen.c -o keygen
+echo "gcc -std=c99 -g3 -pedantic -Wall -O2 otp_enc_d.c otp_utils.c -o otp_enc_d"
+gcc -std=c99 -g3 -pedantic -Wall -O2 otp_enc_d.c otp_utils.c -o otp_enc_d
+echo "gcc -std=c99 -g3 -pedantic -Wall -O2 otp_enc.c otp_utils.c -o otp_enc"
+gcc -std=c99 -g3 -pedantic -Wall -O2 otp_enc.c otp_utils.c -o otp_enc
+echo "gcc -std=c99 -g3 -pedantic -Wall -O2 otp_dec_d.c otp_utils.c -o otp_dec_d"
+gcc -std=c99 -g3 -pedantic -Wall -O2 otp_dec_d.c otp_utils.c -o otp_dec_d
+echo "gcc -std=c99 -g3 -pedantic -Wall -O2 otp_dec.c otp_utils.c -o otp_dec"
+gcc -std=c99 -g3 -pedantic -Wall -O2 otp_dec.c otp_utils.c -o otp_dec
+
+echo "Compile complete!"
